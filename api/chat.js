@@ -3,8 +3,10 @@ import { NextResponse } from 'next/server';
 export async function POST(req) {
     const { message } = await req.json();
     
-    // Customize this logic to mimic your writing style
-    const reply = `You said: "${message}". I'm your AI clone responding like you!`;
+    // Replace this with:
+    // - OpenAI API (for GPT-4-like responses)
+    // - Your custom logic to mimic your style
+    const reply = `You said: "${message}". Here's a response in your style!`;
 
     return NextResponse.json({ reply });
 }
